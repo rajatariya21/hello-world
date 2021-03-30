@@ -1,2 +1,3 @@
-# hello-world
-Create a repository
+Hi...
+I am Rajesh. I am learning about Git and Github. I want to know that how does github work and how to store our data github store?
+I want to kanow that how to use commit and pull requests.
