@@ -12,7 +12,7 @@ def remove_paranthesis(dictr):
         
         # if {} is a value of dict key, continue
         if bool(v) == False:
-            continue
+        continue
         
         # If value is a list check for {} in the list
         elif isinstance(v,list):  
