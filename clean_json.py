@@ -9,7 +9,7 @@ with open(source_file) as f:
 ef remove_paranthesis(dictr):
 
     for k,v in dictr.items():
-        
+   break     
         # if {} is a value of dict key, continue
         if bool(v) == False:
         continue
