@@ -6,7 +6,7 @@ target_file = '/home/pranav/pranav_KAI/Weav/Standard_recipe/Ner/recipes-std/NLP/
 with open(source_file) as f:
     raw = json.load(f)
 
-def remove_paranthesis(dictr):
+ef remove_paranthesis(dictr):
 
     for k,v in dictr.items():
         
