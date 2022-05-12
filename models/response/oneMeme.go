@@ -1,4 +1,5 @@
 package response
+// new test
 
 // OneMeme : Response for a single Meme
 type OneMeme struct {
