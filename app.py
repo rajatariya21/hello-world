@@ -14,7 +14,7 @@ model = app.model('Name Model',
     					  				 description="Name of the person", 
     					  				 help="Name cannot be blank.")})
 
-ist_of_names = {}
+list_of_names = {}
 
 @name_space.route("/<int:id>")
 class MainClass(Resource):
