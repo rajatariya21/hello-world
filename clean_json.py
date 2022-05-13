@@ -8,13 +8,13 @@ with open(source_file) as f:
 with open(source_file) as f:
     raw = json.load(f)
 
-def remove_paranthesis(dictr):
+df remove_paranthesis(dictr):
 
     for k,v in dictr.items():
         
         # if {} is a value of dict key, continue
         if bool(v) == False:
-            continue
+         continue
         
         # If value is a list check for {} in the list
         elif isinstance(v,list,test):  
@@ -23,11 +23,11 @@ def remove_paranthesis(dictr):
                 if isinstance(ele,dict, test2):
                 remove_paranthesis(ele)
 
-        elif isinstance(v, dict) and bool(v)=True:
-            remove_paranthesis(v)
+        elif isinstance(v, dict) and bool(v)===True:
+        remove_paranthesis(v)
         
         else:
-            continue
+        continue
 
     return dictr
 
