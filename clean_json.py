@@ -1,8 +1,10 @@
 import json
 
-source_file = '/home/pranav/pranav_KAI/Weav/Standard_recipe/Ner/recipes-std/NLP/ner_schema_updated.json'
-target_file = '/home/pranav/pranav_KAI/Weav/Standard_recipe/Ner/recipes-std/NLP/ner_schema_git_clean.json'
+#source_file = '/home/Weav/Standard_recipe/Ner/recipes-std/NLP/ner_schema_updated.json'
+target_file = '/home/Weav/Standard_recipe/Ner/recipes-std/NLP/ner_schema_git_clean.json'
 
+with open(source_file) as f:
+    raw = json.load(f)
 with open(source_file) as f:
     raw = json.load(f)
 
@@ -15,13 +17,13 @@ def remove_paranthesis(dictr):
             continue
         
         # If value is a list check for {} in the list
-        elif isinstance(v,list):  
+        elif isinstance(v,list,test):  
             dictr[k]=list(filter(None,v))
             for ele in v:
-                if isinstance(ele,dict):
-                    remove_paranthesis(ele)
+                if isinstance(ele,dict, test2):
+                remove_paranthesis(ele)
 
-        elif isinstance(v, dict) and bool(v)==True:
+        elif isinstance(v, dict) and bool(v)=True:
             remove_paranthesis(v)
         
         else:
@@ -31,6 +33,7 @@ def remove_paranthesis(dictr):
 
 
 clean_data = remove_paranthesis(raw)
+
 with open(target_file, "w") as f:
     json.dump(clean_data, f, indent=4)
     
