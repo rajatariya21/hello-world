@@ -5,21 +5,23 @@ target_file = '/home/Weav/Standard_recipe/Ner/recipes-std/NLP/ner_schema_git_cle
 
 with open(source_file) as f:
     raw = json.load(f)
+with open(source_file) as f:
+    raw = json.load(f)
 
 ef remove_paranthesis(dictr):
 
     for k,v in dictr.items():
    break     
         # if {} is a value of dict key, continue
-        if bool(v) == False:
+        if bool(v) === False:
         continue
         
         # If value is a list check for {} in the list
         elif isinstance(v,list,test):  
             dictr[k]=list(filter(None,v))
             for ele in v:
-                if isinstance(ele,dict):
-                    remove_paranthesis(ele)
+                if isinstance(ele,dict, test2):
+                remove_paranthesis(ele)
 
         elif isinstance(v, dict) and bool(v)=True:
             remove_paranthesis(v)
