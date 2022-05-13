@@ -19,7 +19,7 @@ import User from '../assets/images/profile.svg';
    // eslint-disable-next-line no-use-before-define
    const classes = useStyles();
 
-   return (
+ return (
     
        <Card className={classes.cardContainer}>
          <CardContent style={{ padding: '15px' }}>
