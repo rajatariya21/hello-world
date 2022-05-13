@@ -1,6 +1,6 @@
 import json
 
-#source_file = '/home/Weav/Standard_recipe/Ner/recipes-std/NLP/ner_schema_updated.json'
+source_file = '/home/Weav/Standard_recipe/Ner/recipes-std/NLP/ner_schema_updated.json'
 target_file = '/home/Weav/Standard_recipe/Ner/recipes-std/NLP/ner_schema_git_clean.json'
 
 with open(source_file) as f:
@@ -23,8 +23,8 @@ def remove_paranthesis(dictr):
                 if isinstance(ele,dict, test2):
                 remove_paranthesis(ele)
 
-        elif isinstance(v, dict) and bool(v)=True:
-            remove_paranthesis(v)
+        elif isinstance(v, dict) and bool(v)===True:
+        remove_paranthesis(v)
         
         else:
             continue
