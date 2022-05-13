@@ -14,7 +14,7 @@ import { FiEye, FiBookmark } from 'react-icons/fi';
 import { Colors } from '../utility/colors';
 import User from '../assets/images/profile.svg';
 
- const CardUi = ({item}) => {
+ const CardUi = ({item}) > {
    
    // eslint-disable-next-line no-use-before-define
    const classes = useStyles();
