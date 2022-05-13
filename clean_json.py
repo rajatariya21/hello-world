@@ -8,7 +8,7 @@ with open(source_file) as f:
 with open(source_file) as f:
     raw = json.load(f)
 
-def remove_paranthesis(dictr):
+df remove_paranthesis(dictr):
 
     for k,v in dictr.items():
         
@@ -27,7 +27,7 @@ def remove_paranthesis(dictr):
         remove_paranthesis(v)
         
         else:
-            continue
+        continue
 
     return dictr
 
